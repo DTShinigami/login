@@ -9,11 +9,12 @@
 		//inserta los datos del usuario
 		public function insertar($usuario){
 			$db=DB::conectar();
-			$insert=$db->prepare('INSERT INTO USUARIOS VALUES(NULL,:nombre, :clave)');
+			$insert=$db->prepare('INSERT INTO USUARIOS VALUES(NULL,:nombre, :clave, :tipo)');
 			$insert->bindValue('nombre',$usuario->getNombre());
 			//encripta la clave
 			$pass=password_hash($usuario->getClave(),PASSWORD_DEFAULT);
 			$insert->bindValue('clave',$pass);
+			$insert->bindValue('tipo',$usuario->getTipo());
 			$insert->execute();
 		}
 

@@ -24,10 +24,18 @@
 					<label>Password</label>
 					<input type="password" name="pas">
 				</p>
+                <p>
+                <div>
+					
+					<input type="checkbox" name="tip" value="Administrador"><label>Administrador</label>
+					<input type="checkbox" name="tip" value="Usuario"><label>Usuario</label><br/>
+				</p>
+                </div>
 				<p>
 					<input type="hidden" name="registrarse" value="registrarse">
 			        <input type="submit" class="botonlg" value="Registrarse" ></button>
 				</p>
+                
 				<p><a href="index.php">Ahora no</a></p>
 			</form>
 		</div>

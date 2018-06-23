@@ -31,5 +31,13 @@
 		public function setClave($clave){
 			$this->clave = $clave;
 		}
+
+		public function getTipo(){
+			return $this->tipo;
+		}
+				
+		public function setTipo($tipo){
+			$this->tipo = $tipo;
+		}
 	}
 ?>

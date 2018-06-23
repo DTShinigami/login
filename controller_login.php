@@ -8,11 +8,13 @@
 
 	$usuario=new Usuario();
 	$crud=new CrudUsuario();
+	
 	//verifica si la variable registrarse está definida
 	//se da que está definicda cuando el usuario se loguea, ya que la envía en la petición
 	if (isset($_POST['registrarse'])) {
 		$usuario->setNombre($_POST['usuario']);
 		$usuario->setClave($_POST['pas']);
+		$usuario->setTipo($_POST['tip']);
 		if ($crud->buscarUsuario($_POST['usuario'])) {
 			$crud->insertar($usuario);
 			header('Location: index.php');
