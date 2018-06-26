@@ -15,14 +15,34 @@
 			<h1>Registrarse</h1>
 		</div>
 		<div class="main">
-			<form class="w3-container" action="controller_login.php" method="post">
+			<form action="controller_login.php" method="post">
 				<p>
-					<label>Nombre de usuario o correo electrónico</label>
+					<label>Usuario:</label>
 					<input type="text" name="usuario">
 				</p>
 				<p>
 					<label>Password</label>
 					<input type="password" name="pas">
+				</p>
+                <p>
+					<label>Nombre:</label>
+					<input type="text" name="nombre">
+				</p>
+                <p>
+					<label>Apellido Paterno:</label>
+					<input type="text" name="apellidopaterno">
+				</p>
+                <p>
+					<label>Apellido Materno:</label>
+					<input type="text" name="apellidomaterno">
+				</p>
+                <p>
+					<label>Email:</label>
+					<input type="text" name="email">
+				</p>
+                <p>
+					<label>Responsable</label>
+					<input type="text" name="responsable">
 				</p>
                 <p>
                 <div>
@@ -33,7 +53,7 @@
                 </div>
 				<p>
 					<input type="hidden" name="registrarse" value="registrarse">
-			        <input type="submit" class="botonlg" value="Registrarse" ></button>
+			        <input type="submit" class="botonlg" value="registrarse" ></button>
 				</p>
                 
 				<p><a href="index.php">Ahora no</a></p>
